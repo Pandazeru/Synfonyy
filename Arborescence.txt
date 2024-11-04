@@ -116,4 +116,4 @@ importmap.php : Utilisé pour gérer les imports de JavaScript dans le projet.
 
 phpunit.xmldist : Fichier de configuration pour PHPUnit (tests unitaires).
 
-symfony.lock : Verrouille les versions des packages Symfony utilisés dans le projet.
+symfony.lock : Verrouille les versions des packages utilisés dans le projet Symfony .
