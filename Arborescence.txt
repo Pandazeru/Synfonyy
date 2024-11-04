@@ -1,0 +1,119 @@
+projet_synfony/
+│
+├── assets/
+│   ├── controllers/
+│   ├── styles/
+│   ├── vendor/
+│   ├── app.js
+│   ├── bootstrap.js
+│   └── controllers.json
+├── bin/
+│   ├── console
+│   └── phpunit
+├── config/
+│   ├── packages/
+│   ├── routes/
+│   ├── bundles.php
+│   ├── preload.php
+│   ├── routes.yaml
+│   └── services.yaml
+├── migrations/
+│   ├── .gitignore
+└── public/
+│   ├── index.php
+└── src/
+│   ├── Controller/
+│   ├── Entity/
+│   ├── Repository/
+│   ├── Kernel.php
+└── templates/
+│   ├── base.html.twig
+└── tests/
+│   ├── bootstrap.php
+└── translations/
+│   ├── .gitignore
+└── var/
+│   ├── cache/
+│   ├── log/
+└── vendor/
+│
+└── .env
+│
+└── .env.test
+│
+└── .gitignore
+│
+└── compose.override.yaml
+│
+└── compose.ymal
+│
+└── composer.json
+│
+└── composer.lock
+│
+└── importmap.php
+│
+└── phpunit.xmldist
+│
+└── sympfony.lock
+
+
+assets/ : Contient les ressources front-end de l'application.
+    controllers/ : Scripts JavaScript qui gèrent l'interaction dans le navigateur (par exemple, avec Stimulus).
+    styles/ : Fichiers CSS ou préprocesseurs comme Sass.
+    vendor/ : Dépendances tierces pour le front-end (gérées par npm ou yarn).
+    app.js et bootstrap.js : Fichiers JavaScript d'entrée pour initialiser l'application.
+    controllers.json : Un fichier de configuration pour les contrôleurs Stimulus.
+
+bin/ : Contient des scripts exécutables.
+    console : Commande CLI pour interagir avec l'application (par exemple, exécuter des migrations, générer des fichiers, etc.).
+    phpunit : Exécutable pour lancer les tests PHPUnit.
+
+config/ : Tous les fichiers de configuration de l'application.
+    routes/ : Fichiers de définition des routes de l'application.
+    bundles.php : Enregistre les bundles activés dans l'application.
+    preload.php : Précharge certains fichiers pour améliorer les performances.
+    routes.yaml : Définition des routes au format YAML.
+    services.yaml : Configuration des services (injection de dépendances).
+
+migrations/ : Contient les fichiers de migration de la base de données, permettant de gérer les changements de schéma.
+
+public/ : Point d'entrée de l'application.
+    index.php : Le fichier qui gère toutes les requêtes HTTP et initie l'application Symfony.
+
+src/ : Le code source de l'application.
+    Controller/ : Contient les contrôleurs qui gèrent les requêtes.
+    Entity/ : Représente les entités de la base de données.
+    Repository/ : Repositories pour gérer les requêtes sur les entités.
+    Kernel.php : Classe principale qui gère le cycle de vie de l'application.
+
+templates/ : Contient les fichiers de templates Twig pour le rendu des vues.
+    base.html.twig : Template de base souvent étendu par d'autres templates.
+
+tests/ : Contient les tests automatisés.
+    bootstrap.php : Fichier de configuration pour initialiser les tests.
+
+translations/ : Fichiers de traduction pour la localisation de l'application.
+
+var/ : Utilisé pour les fichiers temporaires.
+    cache/ : Contient les fichiers de cache générés par Symfony.
+    log/ : Contient les fichiers de log de l'application.
+
+vendor/ : Contient toutes les dépendances installées via Composer. Tu n'as généralement pas à modifier ce dossier.
+
+
+env et .env.test : Fichiers de configuration d'environnement, pour définir les variables d'environnement de l'application.
+
+.gitignore : Liste des fichiers et dossiers à ignorer par Git.
+
+compose.override.yaml et compose.yaml : Fichiers de configuration pour Docker Compose (si utilisé).
+
+composer.json : Liste des dépendances du projet et des scripts à exécuter avec Composer.
+
+composer.lock : Fichier qui fixe les versions des dépendances installées.
+
+importmap.php : Utilisé pour gérer les imports de JavaScript dans le projet.
+
+phpunit.xmldist : Fichier de configuration pour PHPUnit (tests unitaires).
+
+symfony.lock : Verrouille les versions des packages Symfony utilisés dans le projet.
