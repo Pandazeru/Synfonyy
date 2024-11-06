@@ -5,11 +5,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class Accueil extends AbstractController
+class Services extends AbstractController
 {
-    #[Route('/accueil')]
+    #[Route('/services')]
     public function index(): Response
     {
-        return $this->render('pages/accueil.html.twig');
+        return $this->render('pages/services.html.twig');
     }
 }

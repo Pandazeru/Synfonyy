@@ -3,3 +3,15 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+contact:
+    path: /Controller/Contact
+    controller: App\Controller\Contact::index
+services:
+    path: /Controller/Services
+    controller: App\Controller\Services::index
+Apropos:
+    path: /Controller/Apropos
+    controller: App\Controller\Apropos::index
+Home:
+    path: /
+    controller: App\Controller\Home::index

@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>A propos</title>
-    </head>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+</head>
     <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ path('services') }}">Services</a></li>
+                <li><a href="{{ path('Home') }}">Home</a></li>
+                <li><a href="{{ path('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
         <h1>A propos de nous !</h1>
-        <a href="http://localhost:8000/accueil"> Retour a l'accueil ! </a>
-        </br>
-        <a href="http://localhost:8000/contact"> Nous contacter ! </a>
+    <footer>
+        <p>&copy; 2024 Mon site Symfony. Tous droits réservés.</p>
+    </footer>
     </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Accueil</title>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ path('services') }}">Services</a></li>
+                <li><a href="{{ path('Apropos') }}">À propos</a></li>
+                <li><a href="{{ path('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>{{ message }}</h1>
+    <h2>Nos utilisateurs</h2>
+    <ul>
+        {% for utilisateur in utilisateurs %}
+            <li>
+                <strong>{{ utilisateur.nom }}</strong>
+                <br>
+                <br>
+                <em>{{ utilisateur.email }}</em>
+                <br>
+                <p>{{ utilisateur.bio }}</p>
+            </li>
+        {% else %}
+            <li>Aucun utilisateur disponible</li>
+        {% endfor %}
+    </ul>
+    <footer>
+        <p>&copy; 2024 Mon site Symfony. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
